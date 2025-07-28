@@ -9,22 +9,10 @@
 
 /* Awards, Achievements & Online Profiles Section */
 #awards-section .card {
-  background: #23262b;
-  border-radius: 16px;
-  border: 2px solid #2ecc71;
-}
-
-/* Custom styles for awards and online profiles */
-.awards-list .card {
-  transition: box-shadow 0.2s, border-color 0.2s;
-  background-color: var(--bs-light);
-  border-width: 2px;
-  border-color: #0dcaf0 !important;
-}
-
-.awards-list .card:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12);
-  border-color: #0dcaf0;
+  /* Use same style as .card for consistency */
+  background-color: #eafaf1;
+  border-radius: 1rem;
+  border: 1px solid #b2f7c1;
 }
 
 .award-rank {
@@ -41,9 +29,9 @@
 
 /* Online Programming Profiles card styles */
 .card.border-info {
-  border-width: 2px;
-  border-color: #0dcaf0 !important;
-  background-color: var(--bs-light);
+  border-radius: 1rem;
+  border: 1px solid #b2f7c1;
+  background-color: #eafaf1;
 }
 
 .card.border-info .card-body {
@@ -57,7 +45,9 @@
   background: #fff;
   transition: background 0.2s, color 0.2s;
 }
-.btn-outline-info:hover, .btn-outline-info:focus {
+
+.btn-outline-info:hover,
+.btn-outline-info:focus {
   background-color: #0dcaf0;
   color: #fff;
 }
@@ -67,34 +57,45 @@ body.dark-mode {
   background-color: #23272b;
   color: #f8f9fa;
 }
+
 body.dark-mode .card.border-info,
-body.dark-mode .awards-list .card {
-  background-color: #23272b;
-  border-color: #0dcaf0 !important;
+body.dark-mode .card.border-info,
+body.dark-mode .awards-list .card,
+body.dark-mode .card {
+  background-color: #313338;
+  border-color: #43b581;
+  color: #fff;
 }
+
 body.dark-mode .btn-outline-info {
   color: #0dcaf0;
   border-color: #0dcaf0;
   background: #23272b;
 }
-body.dark-mode .btn-outline-info:hover, body.dark-mode .btn-outline-info:focus {
+
+body.dark-mode .btn-outline-info:hover,
+body.dark-mode .btn-outline-info:focus {
   background-color: #0dcaf0;
   color: #23272b;
 }
+
 /* Awards, Achievements & Online Profiles Section */
 #awards-section .card {
   background: #23262b;
   border-radius: 16px;
   border: 2px solid #2ecc71;
 }
+
 #awards-section h2 {
   font-weight: 700;
   letter-spacing: 1px;
 }
+
 #awards-section h4 {
   color: #2ecc71;
   font-weight: 600;
 }
+
 #awards-section .list-group-item {
   background: transparent;
   color: #fff;
@@ -102,10 +103,12 @@ body.dark-mode .btn-outline-info:hover, body.dark-mode .btn-outline-info:focus {
   padding-left: 0;
   font-size: 1rem;
 }
+
 #awards-section .card-title {
   color: #3498db;
   font-weight: 600;
 }
+
 #awards-section .btn-outline-info {
   background: #a3f7bf;
   color: #1a3c2b;
@@ -114,10 +117,13 @@ body.dark-mode .btn-outline-info:hover, body.dark-mode .btn-outline-info:focus {
   font-weight: 500;
   transition: background 0.2s, color 0.2s;
 }
-#awards-section .btn-outline-info:hover, #awards-section .btn-outline-info:focus {
+
+#awards-section .btn-outline-info:hover,
+#awards-section .btn-outline-info:focus {
   background: #1a3c2b;
   color: #a3f7bf;
 }
+
 /* Custom GitHub button style for project cards */
 .btn-github {
   background: #a3f7bf;
@@ -128,11 +134,14 @@ body.dark-mode .btn-outline-info:hover, body.dark-mode .btn-outline-info:focus {
   font-weight: 500;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
-.btn-github:hover, .btn-github:focus {
+
+.btn-github:hover,
+.btn-github:focus {
   background: #1a3c2b;
   color: #a3f7bf;
   box-shadow: 0 4px 16px rgba(163, 247, 191, 0.25);
 }
+
 /* Gradient Title */
 .text-gradient {
   background: linear-gradient(90deg, #0077b5 0%, #ffa116 100%);
@@ -146,8 +155,9 @@ body.dark-mode .btn-outline-info:hover, body.dark-mode .btn-outline-info:focus {
 .btn-social.btn-lg {
   font-size: 1.15rem;
   padding: 0.75rem 2rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
+
 /* Social Profile Buttons */
 .btn-social {
   display: inline-flex;
@@ -158,58 +168,71 @@ body.dark-mode .btn-outline-info:hover, body.dark-mode .btn-outline-info:focus {
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   border: none;
 }
+
 .btn-social i {
   font-size: 1.2rem;
 }
+
 .btn-linkedin {
   background: #0077b5;
   color: #fff;
 }
+
 .btn-linkedin:hover {
   background: #005983;
   color: #fff;
-  box-shadow: 0 4px 16px rgba(0,119,181,0.15);
+  box-shadow: 0 4px 16px rgba(0, 119, 181, 0.15);
 }
+
 .btn-github {
   background: #24292e;
   color: #fff;
 }
+
 .btn-github:hover {
   background: #171a1c;
   color: #fff;
-  box-shadow: 0 4px 16px rgba(36,41,46,0.15);
+  box-shadow: 0 4px 16px rgba(36, 41, 46, 0.15);
 }
+
 .btn-codeforces {
   background: #f7c873;
   color: #222;
 }
+
 .btn-codeforces:hover {
   background: #e6b04a;
   color: #222;
-  box-shadow: 0 4px 16px rgba(247,200,115,0.15);
+  box-shadow: 0 4px 16px rgba(247, 200, 115, 0.15);
 }
+
 .btn-leetcode {
   background: #ffa116;
   color: #222;
 }
+
 .btn-leetcode:hover {
   background: #e59400;
   color: #222;
-  box-shadow: 0 4px 16px rgba(255,161,22,0.15);
+  box-shadow: 0 4px 16px rgba(255, 161, 22, 0.15);
 }
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f6fff9; /* very light green background */
-  color: #111; /* black text */
-  padding-top: 4rem; /* Add space for fixed navbar */
+  background-color: #f6fff9;
+  /* very light green background */
+  color: #111;
+  /* black text */
+  padding-top: 4rem;
+  /* Add space for fixed navbar */
 }
 
 .navbar {
   transition: background-color 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.scrolled {
@@ -217,8 +240,11 @@ body {
   -webkit-backdrop-filter: blur(10px);
 }
 
-h1, h2, h3 {
-  color: #111; /* black headings */
+h1,
+h2,
+h3 {
+  color: #111;
+  /* black headings */
 }
 
 .hero {
@@ -237,7 +263,7 @@ h1, h2, h3 {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .success-badge {
@@ -247,7 +273,7 @@ h1, h2, h3 {
   background: white;
   padding: 15px 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   z-index: 1;
 }
@@ -267,8 +293,10 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-.navbar, .navbar.navbar-expand-lg {
-  background-color: #43b581 !important; /* consistent green */
+.navbar,
+.navbar.navbar-expand-lg {
+  background-color: #43b581 !important;
+  /* consistent green */
   border-bottom: 1px solid #36a169;
 }
 
@@ -302,27 +330,35 @@ h1, h2, h3 {
 .card {
   border-radius: 1rem;
   transition: transform 0.2s;
-  border: 1px solid #b2f7c1; /* light green border */
-  background-color: #eafaf1; /* lighter green card background */
-  color: #111; /* black text */
+  border: 1px solid #b2f7c1;
+  /* light green border */
+  background-color: #eafaf1;
+  /* lighter green card background */
+  color: #111;
+  /* black text */
 }
+
 .card:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 24px rgba(67,181,129,0.15);
+  box-shadow: 0 8px 24px rgba(67, 181, 129, 0.15);
 }
 
 section h2 {
   font-weight: 700;
-  color: #111; /* black section headings */
+  color: #111;
+  /* black section headings */
 }
 
-.btn, .btn-primary {
+.btn,
+.btn-primary {
   background-color: #b2f7c1;
   color: #111;
   border: none;
   transition: background 0.2s;
 }
-.btn:hover, .btn-primary:hover {
+
+.btn:hover,
+.btn-primary:hover {
   background-color: #43b581;
   color: #fff;
 }
@@ -340,8 +376,10 @@ footer {
   text-decoration: none;
   transition: color 0.2s;
 }
+
 .list-inline-item a:hover {
-  color: #36a169; /* darker green on hover */
+  color: #36a169;
+  /* darker green on hover */
   text-decoration: underline;
 }
 
@@ -425,11 +463,11 @@ footer {
   z-index: 1;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2b2d31;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
 }
 
@@ -450,7 +488,7 @@ body.dark-mode {
 
 body.dark-mode .success-badge {
   background: #313338;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 body.dark-mode .success-badge .text {
@@ -494,15 +532,15 @@ body.dark-mode .navbar .nav-link::after {
 }
 
 /* Headings */
-body.dark-mode h1, 
-body.dark-mode h2, 
+body.dark-mode h1,
+body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode .card-title {
   color: #fff;
 }
 
 /* Navbar */
-body.dark-mode .navbar, 
+body.dark-mode .navbar,
 body.dark-mode .navbar.navbar-expand-lg {
   background-color: #1e1f22 !important;
   border-bottom: 1px solid #43b581;
@@ -597,4 +635,15 @@ body.dark-mode .list-inline-item a {
 
 body.dark-mode .list-inline-item a:hover {
   color: #b2f7c1;
+}
+
+body.dark-mode .btn-github {
+  background: #24292e;
+  color: #fff;
+}
+
+body.dark-mode .btn-github:hover {
+  background: #171a1c;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(36, 41, 46, 0.15);
 }
